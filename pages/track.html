@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Service | ServiceCare</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            ServiceCare
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="../index.html">Home</a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="track.html" class="active">
+                Track Service
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <h1>Track Your Service</h1>
+
+        <p>
+            Check the current status of your repair request
+            using your Service ID.
+        </p>
+
+    </section>
+
+
+    <!-- Tracking Section -->
+    <section class="track-section">
+
+        <div class="track-box">
+
+            <h2>Service Status</h2>
+
+            <p>
+                Enter your Service ID to check your repair status.
+            </p>
+
+            <form id="trackForm">
+
+                <label for="serviceId">
+                    Service ID
+                </label>
+
+                <input
+                    type="text"
+                    id="serviceId"
+                    placeholder="Example: SC1001"
+                    required
+                >
+
+                <button type="submit" class="btn">
+                    Track Service
+                </button>
+
+            </form>
+
+
+            <!-- Result -->
+            <div id="trackResult" class="track-result">
+
+                <h3>Service Found</h3>
+
+                <p>
+                    Service ID:
+                    <strong id="resultId"></strong>
+                </p>
+
+                <p>
+                    Status:
+                    <strong id="resultStatus"></strong>
+                </p>
+
+                <p>
+                    Device:
+                    <strong id="resultDevice"></strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Need a New Repair?</h2>
+
+        <p>
+            Submit a new service request to our team.
+        </p>
+
+        <a href="service-request.html" class="btn">
+            Request Service
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>ServiceCare</h3>
+
+                <p>
+                    Reliable computer and electronics
+                    service management.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="track.html">
+                    Track Service
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>✉️ servicecare@example.com</p>
+
+                <p>📍 Mangalore, Karnataka</p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ServiceCare. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/track.js"></script>
+
+</body>
+
+</html>

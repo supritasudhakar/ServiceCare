@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Request | ServiceCare</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            ServiceCare
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="../index.html">Home</a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="track.html">
+                Track Service
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <h1>Service Request</h1>
+
+        <p>
+            Tell us about your device and the problem you are facing.
+        </p>
+
+    </section>
+
+
+    <!-- Service Request Form -->
+    <section class="request-section">
+
+        <div class="request-box">
+
+            <h2>Submit Your Request</h2>
+
+            <p class="form-description">
+                Please provide accurate information so our team
+                can understand your service requirement.
+            </p>
+
+
+            <form id="serviceForm">
+
+                <!-- Customer Name -->
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+
+                <!-- Device Type -->
+                <div class="form-group">
+
+                    <label for="deviceType">
+                        Device Type
+                    </label>
+
+                    <select id="deviceType" required>
+
+                        <option value="">
+                            Select Device
+                        </option>
+
+                        <option value="Laptop">
+                            Laptop
+                        </option>
+
+                        <option value="Desktop">
+                            Desktop
+                        </option>
+
+                        <option value="Printer">
+                            Printer
+                        </option>
+
+                        <option value="Monitor">
+                            Monitor
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Device Model -->
+                <div class="form-group">
+
+                    <label for="deviceModel">
+                        Device Model
+                    </label>
+
+                    <input
+                        type="text"
+                        id="deviceModel"
+                        placeholder="Example: Dell Inspiron 15"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Problem -->
+                <div class="form-group">
+
+                    <label for="problem">
+                        Describe the Problem
+                    </label>
+
+                    <textarea
+                        id="problem"
+                        rows="5"
+                        placeholder="Describe the issue with your device"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Submit Service Request
+                </button>
+
+            </form>
+
+
+            <!-- Success Message -->
+            <div
+                id="requestSuccess"
+                class="request-success"
+            >
+
+                <h3>Request Submitted Successfully!</h3>
+
+                <p>
+                    Your Service ID is:
+                </p>
+
+                <strong id="generatedServiceId">
+                    SC1001
+                </strong>
+
+                <p>
+                    Please save this Service ID to track your repair.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>ServiceCare</h3>
+
+                <p>
+                    Reliable computer and electronics
+                    service management.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="track.html">
+                    Track Service
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>✉️ servicecare@example.com</p>
+
+                <p>📍 Mangalore, Karnataka</p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ServiceCare. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/service-request.js"></script>
+
+</body>
+
+</html>
