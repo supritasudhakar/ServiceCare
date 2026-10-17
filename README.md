@@ -90,12 +90,28 @@ Replace `YOUR\_GITHUB\_REPOSITORY\_URL` with your actual GitHub repository URL.
 
 ### Step 2: Move the Project
 Place the project folder inside:
+```bash
+C:\xampp\htdocs\
+```
+Step 3: Start XAMPP
+Open the XAMPP Control Panel.
+Start Apache.
+Start MySQL.
 
+Step 4: Set Up the Database
+Open http://localhost/phpmyadmin/.
+Create the database required by the project.
+Import the project's SQL file if one is included.
+Update the database configuration with your local MySQL credentials.
+Use the actual database name and SQL file from your project.
+
+Step 5: Run the Website
+Open your browser and visit:
+```bash
+http://localhost/service/
+```
 ## 🧪 Testing
 Test the main features after starting Apache and MySQL:
-
-
-
 - Open the website homepage.
 - Verify the admin login, if configured.
 - Check the admin dashboard.
